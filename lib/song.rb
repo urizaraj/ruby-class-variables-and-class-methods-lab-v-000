@@ -23,9 +23,4 @@ class Song
     Array.new(Set.new(@@genres))
   end
 
-
-
-
-
-
-  
+end
