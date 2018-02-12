@@ -20,7 +20,7 @@ class Song
     @@count
   end
 
-  def genres
+  def self.genres
     Array.new(Set.new(@@genres))
   end
 
