@@ -30,7 +30,21 @@ class Song
   end
 
   def self.artists
+    result = []
+    @@artists.each do |artist|
+      result << artist if !result.include?(artist)
+    end
+    result
   end
-
-
+  def self.genre_count
+    result = {}
+    @@genre.each do |genre|
+      if result.has_key?(genre)
+        result[genre] += 1
+      else
+        result[genre] = 1
+      end
+    end
+    result
+  end
 end
