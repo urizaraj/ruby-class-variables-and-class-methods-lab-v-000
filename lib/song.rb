@@ -14,6 +14,7 @@ class Song
     @@count += 1
 
     @@genres << genre
+    @@artists << artist
   end
 
   def self.count
@@ -23,5 +24,8 @@ class Song
   def self.genres
     Array.new(Set.new(@@genres))
   end
+
+  def self.artists
+
 
 end
