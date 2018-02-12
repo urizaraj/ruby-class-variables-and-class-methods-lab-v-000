@@ -58,4 +58,5 @@ class Song
       end
     end
     result
+  end
 end
