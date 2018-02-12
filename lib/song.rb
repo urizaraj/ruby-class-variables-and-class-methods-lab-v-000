@@ -26,6 +26,7 @@ class Song
   end
 
   def self.artists
+  end
 
 
 end
